@@ -14,41 +14,42 @@
         android:background="@color/gray">
 
         <Button
+            android:id="@+id/resetBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/resetBtn"
-            android:text="@string/reset"
             android:background="@null"
+            android:onClick="resetActivated"
+            android:text="@string/reset"
             android:textColor="@color/red"
-            android:textSize="30sp"
-            android:onClick="resetActivated"/>
+            android:textSize="25sp" />
 
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/timerTxt"
+            android:layout_gravity="center"
             android:text="@string/timer"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
 
         <Button
+            android:id="@+id/startBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/startBtn"
-            android:text="@string/start"
-            android:background="@null"
-            android:textColor="@color/green"
-            android:textSize="30sp"
             android:layout_gravity="end"
             android:layout_marginEnd="20sp"
-            android:onClick="startActivated"/>
+            android:background="@null"
+            android:onClick="startActivated"
+            android:text="@string/start"
+            android:textColor="@color/green"
+            android:textSize="25sp" />
 
 
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
+        android:id="@+id/timerTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="60sp"

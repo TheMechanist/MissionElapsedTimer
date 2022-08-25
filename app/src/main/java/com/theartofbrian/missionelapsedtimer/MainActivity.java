@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         int rounded = (int) Math.round(time);
         int seconds = ((rounded % 86400) % 3600) % 60;
         int minutes = ((rounded % 86400) % 3600) / 60;
-        int hours = ((rounded % 86400) % 3600);
+        int hours = ((rounded % 86400) / 3600);
 
         return formatTime(seconds, minutes, hours);
     }
